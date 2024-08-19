@@ -52,12 +52,12 @@ Training
 --------
 
 ##### Preprocess Data
-
-```
 For Knowledge Selection
+```
 DSTC9, DSTC10 dataset include processing python files.
-
+```
 For Response Selection
+```
 response_selection/ubuntu/preprocess_FT_ecom.py
 response_selection/e-commerce/preprocess_FT_ecom.py
 ```
