@@ -18,8 +18,6 @@ Implements the model described in the following paper [Efficient Dynamic Hard Ne
     pages = "89--100",
 }
 ```
-This code is reimplemented as a fork of [huggingface/transformers][2].
-
 ![alt text](https://user-images.githubusercontent.com/32722198/119294465-79847080-bc8f-11eb-80b1-1dfafb0e1b6c.png)
 
 Setup and Dependencies
@@ -133,8 +131,6 @@ We provide model checkpoints of BERT_FP, which obtained new state-of-the-art, fo
 | [BERT_FP]      | 0.870 | 0.956 | 0.993 |
 
 
-
-[1]: https://github.com/huggingface/transformers
 [2]: https://github.com/taesunwhang/BERT-ResSel
 [3]: https://drive.google.com/file/d/1-4E0eEjyp7n_F75TEh7OKrpYPK4GLNoE/view?usp=sharing
 [4]: https://drive.google.com/file/d/1n2zigNDiIArWtsiV9iUQLwfSBgtNn7ws/view?usp=sharing
