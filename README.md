@@ -18,7 +18,7 @@ Implements the model described in the following paper [Efficient Dynamic Hard Ne
     pages = "89--100",
 }
 ```
-![alt text](https://user-images.githubusercontent.com/32722198/119294465-79847080-bc8f-11eb-80b1-1dfafb0e1b6c.png)
+![alt text](![fig2](https://github.com/user-attachments/assets/6d5274f3-51ba-4ce6-a8ed-285947d3edb1)
 
 Setup and Dependencies
 ----------------------
