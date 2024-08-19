@@ -1,7 +1,7 @@
 Efficient Dynamic Hard Negative Sampling for Dialogue Selection <img src="https://pytorch.org/assets/images/logo-dark.svg" width = "90" align=center />
 ====================================
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/efficient-dynamic-hard-negative-sampling-for/conversational-response-selection-on-ubuntu-1)](https://paperswithcode.com/sota/conversational-response-selection-on-ubuntu-1?p=efficient-dynamic-hard-negative-sampling-for)
-
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/efficient-dynamic-hard-negative-sampling-for/conversational-response-selection-on-e)](https://paperswithcode.com/sota/conversational-response-selection-on-e?p=efficient-dynamic-hard-negative-sampling-for)
 
 Implements the model described in the following paper [Efficient Dynamic Hard Negative Sampling for Dialogue Selection](https://aclanthology.org/2024.nlp4convai-1.6/) in ACL-NLP4ConvAI 2024.
 
