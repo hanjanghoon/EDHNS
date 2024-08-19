@@ -37,13 +37,13 @@ Preparing Data and Checkpoints
 
 ### Dataset and Checkpoints
 
-##### Dataset
+#### Dataset
 - [Dataset for Knowledge Selection (DSTC9, DSTC10)][1]
 - [Dataset for Response Selection (Ubuntu, E-commerce)][2]
 
 Original version for each dataset is availble in [Ubuntu Corpus V1][3], [E-Commerce Corpus][4], respectively.
 
-##### Checkpoints
+#### Checkpoints
 - [Checkpoints (RoBERTa-large-EHDNS) for Knowledge Selection (DSTC9, DSTC10)][5]
 - [Checkpoints (BERT-FP-EHDNS) for Response Selection (Ubuntu, E-commerce)][6]
 
@@ -51,7 +51,7 @@ Original version for each dataset is availble in [Ubuntu Corpus V1][3], [E-Comme
 Training
 --------
 
-##### Preprocess Data
+#### Preprocess Data
 For Knowledge Selection
 ```
 DSTC9, DSTC10 dataset include processing python files.
@@ -65,7 +65,7 @@ response_selection/e-commerce/preprocess_FT_ecom.py
 
 ### Traing and Test
 
-##### Training (DSTC9, DSTC10, Ubuntu Corpus V1, E-commerce Corpus)
+#### Training (DSTC9, DSTC10, Ubuntu Corpus V1, E-commerce Corpus)
 
 ```shell
 sh knowledge_selection/dstc9/train_dstc9_rlm_EDHNS.sh
@@ -74,7 +74,7 @@ sh response_selection/ubuntu/train_bert_ubuntu.sh
 sh response_selection/e-commerce/train_bert_ecom.sh
 ```
 
-##### Test (DSTC9, DSTC10, Ubuntu Corpus V1, E-commerce Corpus)
+#### Test (DSTC9, DSTC10, Ubuntu Corpus V1, E-commerce Corpus)
 ```shell
 sh knowledge_selection/dstc9/test_dstc9_rlm_EDHNS.sh
 sh knowledge_selection/dstc10/test_dstc10_rlm_EDHNS.sh
