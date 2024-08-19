@@ -87,13 +87,13 @@ Performance
 
 We provide model checkpoints of BERT_FP, which obtained new state-of-the-art, for each dataset.
 
-|DSTC9           | R@1   | R@2   | R@5   |
+|DSTC9           | R@1   | R@5   | MRR@5   |
 | -------------- | ----- | ----- | ----- |
-| [RoBERTa-large-EDHNS] | 0.917 | 0.965 | 0.994 |
+| [RoBERTa-large-EDHNS] | 0.931 | 0.998 | 0.962 |
 
 | DSTC10         | R@1   | R@2   | R@5   |
 | -------------- | ----- | ----- | ----- |
-| [RoBERTa-large-EDHNS] | 0.957 | 0.986 | 0.997 |
+| [RoBERTa-large-EDHNS] | 0.821 | 0.935 | 0.869 |
 
 
 
@@ -108,9 +108,9 @@ We provide model checkpoints of BERT_FP, which obtained new state-of-the-art, fo
 | [BERT_FP-EDHNS] | 0.957 | 0.986 | 0.997 |
 
 
-[2]: https://github.com/taesunwhang/BERT-ResSel
-[3]: https://drive.google.com/file/d/1-4E0eEjyp7n_F75TEh7OKrpYPK4GLNoE/view?usp=sharing
-[4]: https://drive.google.com/file/d/1n2zigNDiIArWtsiV9iUQLwfSBgtNn7ws/view?usp=sharing
-[5]: https://drive.google.com/file/d/16Rv8rSRneq7gfPRkpFZseNYfswuoqI4-/view?usp=sharing
+[1]: https://github.com/taesunwhang/BERT-ResSel
+[2]: https://drive.google.com/file/d/1-4E0eEjyp7n_F75TEh7OKrpYPK4GLNoE/view?usp=sharing
 [3]: https://www.dropbox.com/s/2fdn26rj6h9bpvl/ubuntu_data.zip
 [4]: https://github.com/cooelf/DeepUtteranceAggregation
+[5]: https://www.dropbox.com/s/2fdn26rj6h9bpvl/ubuntu_data.zip
+[6]: https://github.com/cooelf/DeepUtteranceAggregation
