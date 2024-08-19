@@ -37,13 +37,13 @@ Preparing Data and Checkpoints
 
 ### Dataset and Checkpoints
 
-We provide following post-trained and fine-tuned checkpoints. 
-
+##### Dataset
 - [Dataset for Knowledge Selection (DSTC9, DSTC10)][1]
 - [Dataset for Response Selection (Ubuntu, E-commerce)][2]
 
 Original version for each dataset is availble in [Ubuntu Corpus V1][3], [E-Commerce Corpus][4], respectively.
 
+##### Checkpoints
 - [Checkpoints (RoBERTa-large-EHDNS) for Knowledge Selection (DSTC9, DSTC10)][5]
 - [Checkpoints (BERT-FP-EHDNS) for Response Selection (Ubuntu, E-commerce)][6]
 
