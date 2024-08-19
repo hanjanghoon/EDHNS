@@ -1,16 +1,38 @@
-Fine-grained Post-training for Multi-turn Response Selection <img src="https://pytorch.org/assets/images/logo-dark.svg" width = "90" align=center />
+Efficient Dynamic Hard Negative Sampling for Dialogue Selection <img src="https://pytorch.org/assets/images/logo-dark.svg" width = "90" align=center />
 ====================================
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/fine-grained-post-training-for-improving/conversational-response-selection-on-ubuntu-1)](https://paperswithcode.com/sota/conversational-response-selection-on-ubuntu-1?p=fine-grained-post-training-for-improving)
 
 
-Implements the model described in the following paper [Fine-grained Post-training for Improving Retrieval-based Dialogue Systems](https://www.aclweb.org/anthology/2021.naacl-main.122/) in NAACL-2021.
+Implements the model described in the following paper [Efficient Dynamic Hard Negative Sampling for Dialogue Selection](https://aclanthology.org/2024.nlp4convai-1.6/) in ACL-NLP4ConvAI 2024.
 
 ```
-@inproceedings{han-etal-2021-fine,
-title = "Fine-grained Post-training for Improving Retrieval-based Dialogue Systems",
-author = "Han, Janghoon  and Hong, Taesuk  and Kim, Byoungjae  and Ko, Youngjoong  and Seo, Jungyun",
-booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
-month = jun, year = "2021", address = "Online", publisher = "Association for Computational Linguistics", url = "https://www.aclweb.org/anthology/2021.naacl-main.122", pages = "1549--1558",
+@inproceedings{han-etal-2024-efficient,
+    title = "Efficient Dynamic Hard Negative Sampling for Dialogue Selection",
+    author = "Han, Janghoon  and
+      Lee, Dongkyu  and
+      Shin, Joongbo  and
+      Bae, Hyunkyung  and
+      Bang, Jeesoo  and
+      Kim, Seonghwan  and
+      Choi, Stanley Jungkyu  and
+      Lee, Honglak",
+    editor = "Nouri, Elnaz  and
+      Rastogi, Abhinav  and
+      Spithourakis, Georgios  and
+      Liu, Bing  and
+      Chen, Yun-Nung  and
+      Li, Yu  and
+      Albalak, Alon  and
+      Wakaki, Hiromi  and
+      Papangelis, Alexandros",
+    booktitle = "Proceedings of the 6th Workshop on NLP for Conversational AI (NLP4ConvAI 2024)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.nlp4convai-1.6",
+    pages = "89--100",
+    abstract = "Recent studies have demonstrated significant improvements in selection tasks, and a considerable portion of this success is attributed to incorporating informative negative samples during training. While traditional methods for constructing hard negatives provide meaningful supervision, they depend on static samples that do not evolve during training, leading to sub-optimal performance. Dynamic hard negative sampling addresses this limitation by continuously adapting to the model{'}s changing state throughout training. However, the high computational demands of this method restrict its applicability to certain model architectures. To overcome these challenges, we introduce an efficient dynamic hard negative sampling (EDHNS). EDHNS enhances efficiency by pre-filtering easily discriminable negatives, thereby reducing the number of candidates the model needs to compute during training. Additionally, it excludes question-candidate pairs where the model already exhibits high confidence from loss computations, further reducing training time. These approaches maintain learning quality while minimizing computation and streamlining the training process. Extensive experiments on DSTC9, DSTC10, Ubuntu, and E-commerce benchmarks demonstrate that EDHNS significantly outperforms baseline models, proving its effectiveness in dialogue selection tasks.",
 }
 ```
 This code is reimplemented as a fork of [huggingface/transformers][2].
