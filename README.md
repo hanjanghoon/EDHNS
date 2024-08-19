@@ -107,5 +107,5 @@ Performance
 [2]: https://drive.google.com/drive/folders/1wwZKskb5zq6538-iXcKUOPTbI8nIGH46?usp=sharing
 [3]: https://www.dropbox.com/s/2fdn26rj6h9bpvl/ubuntu_data.zip
 [4]: https://github.com/cooelf/DeepUtteranceAggregation
-[5]: https://www.dropbox.com/s/2fdn26rj6h9bpvl/ubuntu_data.zip
-[6]: https://github.com/cooelf/DeepUtteranceAggregation
+[5]: https://drive.google.com/drive/folders/1_WBiO2Zm5nkw6R7wlg-cbG1jaelWiaQu?usp=sharing
+[6]: https://drive.google.com/drive/folders/19RJThFa-gbJD115wjjxf768vvH5qJk5F?usp=sharing
