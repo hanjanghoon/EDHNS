@@ -51,12 +51,12 @@ Original version for each dataset is availble in [Ubuntu Corpus V1][3], [E-Comme
 Training
 --------
 
-#### Preprocess Data
-For Knowledge Selection
+### Preprocess Data
+#### For Knowledge Selection
 ```
 DSTC9, DSTC10 dataset include processing python files.
 ```
-For Response Selection
+#### For Response Selection
 ```
 response_selection/ubuntu/preprocess_FT_ecom.py
 response_selection/e-commerce/preprocess_FT_ecom.py
@@ -64,9 +64,7 @@ response_selection/e-commerce/preprocess_FT_ecom.py
 
 
 ### Traing and Test
-
 #### Training (DSTC9, DSTC10, Ubuntu Corpus V1, E-commerce Corpus)
-
 ```shell
 sh knowledge_selection/dstc9/train_dstc9_rlm_EDHNS.sh
 sh knowledge_selection/dstc10/train_dstc10_rlm_EDHNS.sh
@@ -84,8 +82,7 @@ sh response_selection/e-commerce/test_bert_ecom.sh
 
 Performance
 ----------
-
-We provide model checkpoints of BERT_FP, which obtained new state-of-the-art, for each dataset.
+#### For Knowledge Selection
 
 |DSTC9           | R@1   | R@5   | MRR@5   |
 | -------------- | ----- | ----- | ----- |
@@ -96,9 +93,7 @@ We provide model checkpoints of BERT_FP, which obtained new state-of-the-art, fo
 | [RoBERTa-large-EDHNS] | 0.821 | 0.935 | 0.869 |
 
 
-
-We provide model checkpoints of BERT_FP, which obtained new state-of-the-art, for each dataset.
-
+#### For Response Selection
 | Ubuntu         | R@1   | R@2   | R@5   |
 | -------------- | ----- | ----- | ----- |
 | [BERT_FP-EDHNS] | 0.917 | 0.965 | 0.994 |
