@@ -89,11 +89,11 @@ We provide model checkpoints of BERT_FP, which obtained new state-of-the-art, fo
 
 |DSTC9           | R@1   | R@2   | R@5   |
 | -------------- | ----- | ----- | ----- |
-|[BERT_FP]      | 0.917 | 0.965 | 0.994 |
+| [RoBERTa-large-EDHNS] | 0.917 | 0.965 | 0.994 |
 
 | DSTC10         | R@1   | R@2   | R@5   |
 | -------------- | ----- | ----- | ----- |
-|[BERT_FP]      | 0.957 | 0.986 | 0.997 |
+| [RoBERTa-large-EDHNS] | 0.957 | 0.986 | 0.997 |
 
 
 
@@ -101,11 +101,11 @@ We provide model checkpoints of BERT_FP, which obtained new state-of-the-art, fo
 
 | Ubuntu         | R@1   | R@2   | R@5   |
 | -------------- | ----- | ----- | ----- |
-|[BERT_FP-EDHNS]| 0.917 | 0.965 | 0.994 |
+| [BERT_FP-EDHNS] | 0.917 | 0.965 | 0.994 |
 
 | E-Commerce     | R@1   | R@2   | R@5   |
 | -------------- | ----- | ----- | ----- |
-|[BERT_FP-EDHNS] | 0.957 | 0.986 | 0.997 |
+| [BERT_FP-EDHNS] | 0.957 | 0.986 | 0.997 |
 
 
 [2]: https://github.com/taesunwhang/BERT-ResSel
