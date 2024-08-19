@@ -1,0 +1,79 @@
+import torch
+import torch.nn.functional as F
+import logging
+
+
+logger = logging.getLogger(__name__)
+
+
+
+def run_batch_selection_train(args, model, batch):
+    batch = tuple(input_tensor.to(args.device) for input_tensor in batch if isinstance(input_tensor, torch.Tensor))
+    if args.multi_task:
+        with torch.no_grad():
+            input_ids, token_type_ids, mc_labels, mlm_label = batch
+        model_outputs = model(
+            input_ids=input_ids, token_type_ids=token_type_ids,
+            labels=mc_labels,
+            masked_lm_labels=mlm_label
+        )
+        mlm_loss=model_outputs[0]
+        mc_loss = model_outputs[1]
+        mc_logits = model_outputs[2]
+        # loss=mc_loss
+        
+        return  mlm_loss,mc_loss, mc_logits, mc_labels
+    else:
+        input_ids, token_type_ids, mc_labels = batch
+        model_outputs = model(
+            input_ids=input_ids, token_type_ids=token_type_ids,
+            labels=mc_labels
+        )
+        mc_loss = model_outputs[0]
+        mc_logits = model_outputs[1]
+    
+    
+        return  torch.tensor([]), mc_loss, mc_logits, mc_labels
+
+
+
+
+def run_batch_selection_eval(args, model, batch):
+    candidates_per_forward = args.candidate_batch_size
+    batch = tuple(input_tensor.to(args.device) for input_tensor in batch if isinstance(input_tensor, torch.Tensor))
+    
+    input_ids, token_type_ids, mc_labels = batch
+
+    all_mc_logits = []
+
+    for index in range(0, input_ids.size(1), candidates_per_forward):
+        model_outputs = model(
+            input_ids=input_ids[0, index:index+candidates_per_forward].unsqueeze(1),
+            token_type_ids=token_type_ids[0, index:index+candidates_per_forward].unsqueeze(1)
+        )
+        mc_logits = model_outputs[0]
+        all_mc_logits.append(mc_logits.detach())
+    all_mc_logits = torch.cat(all_mc_logits, dim=0)
+    return all_mc_logits, mc_labels
+
+
+
+def run_batch_selection_ranking(args, model, batch):
+    candidates_per_forward =  args.candidate_batch_size
+    batch = tuple(input_tensor.to(args.device) for input_tensor in batch if isinstance(input_tensor, torch.Tensor))
+    
+    input_ids, token_type_ids,_ = batch
+
+    all_mc_logits = []
+
+    for index in range(0, input_ids.size(1), candidates_per_forward):
+        model_outputs = model(
+            input_ids=input_ids[0, index:index+candidates_per_forward].unsqueeze(1),
+            token_type_ids=token_type_ids[0, index:index+candidates_per_forward].unsqueeze(1)
+        )
+        mc_logits = model_outputs[0]
+        all_mc_logits.append(mc_logits.detach())
+    
+    all_mc_logits = torch.cat(all_mc_logits, dim=0).view([-1])
+    
+    return  all_mc_logits
