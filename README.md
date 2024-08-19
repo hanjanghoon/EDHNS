@@ -103,8 +103,8 @@ Performance
 | [BERT_FP-EDHNS] | 0.957 | 0.986 | 0.997 |
 
 
-[1]: https://github.com/taesunwhang/BERT-ResSel
-[2]: https://drive.google.com/file/d/1-4E0eEjyp7n_F75TEh7OKrpYPK4GLNoE/view?usp=sharing
+[1]: https://drive.google.com/drive/folders/1MNDskgwOo_OoUhK6rzf6Wrr26AdC7FUp?usp=sharing
+[2]: https://drive.google.com/drive/folders/1wwZKskb5zq6538-iXcKUOPTbI8nIGH46?usp=sharing
 [3]: https://www.dropbox.com/s/2fdn26rj6h9bpvl/ubuntu_data.zip
 [4]: https://github.com/cooelf/DeepUtteranceAggregation
 [5]: https://www.dropbox.com/s/2fdn26rj6h9bpvl/ubuntu_data.zip
